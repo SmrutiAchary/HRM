@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Material design sign up form</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\LENOVO\Downloads\Project\Project\static\css\register.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="login-box">
+  <form action="{{url_for('register')}}" method="post">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+    <input type="text" name="username" placeholder="Username" />
+    <input type="text" name="email" placeholder="E-mail" />
+    <input type="password" name="password" placeholder="Password" />
+    <input type="password" name="repass" placeholder="Retype password" />
+    
+    <input type="submit" name="signup_submit" value="Sign me up" />
+    <a href="{{url_for('login')}}"><input type="button" name="login" value="login" /></a>
+  </div>
+</form>
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
